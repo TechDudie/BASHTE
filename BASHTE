@@ -12,28 +12,16 @@ echo "#  BASHTE TEXT EDITOR - i = insert  :q = quit  :w = write #
 echo "#  :wq = Write and quit  :q! = quit and discard           #"
 echo "###########################################################"
 read -p ">" store
-sed "1 i $store" $file
 read -p ">" store
-sed "2 i $store" $file
 read -p ">" store
-sed "3 i $store" $file
 read -p ">" store
-sed "4 i $store" $file
 read -p ">" store
-sed "5 i $store" $file
 read -p ">" store
-sed "6 i $store" $file
 read -p ">" store
-sed "7 i $store" $file
 read -p ">" store
-sed "8 i $store" $file
 read -p ">" store
-sed "9 i $store" $file
 read -p ">" store
-sed "10 i $store" $file
 read -p ">" store
-sed "11 i $store" $file
 read -p ">" store
-sed "12 i $store" $file
 read -p ">" store
-sed "13 i $store" $file
+echo $store
