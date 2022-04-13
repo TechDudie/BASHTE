@@ -1,7 +1,1 @@
 #/bin/bash
-
-dir=$(pwd)
-
-echo "Current working directory: $dir"
-
-echo $2 > $2.$3
