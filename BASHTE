@@ -36,7 +36,4 @@ echo $store > $file
 read -p ">" store
 echo $store > $file
 read -p ">" store
-read -p ">" store
-read -p ">" store
-read -p ">" store
 
