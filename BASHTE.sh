@@ -28,8 +28,14 @@ echo $store >> $file
 read -p ">" store
 echo $store >> $file
 read -p ">" store
+echo $store >> $file
 read -p ">" store
+echo $store >> $file
 read -p ">" store
+echo $store >> $file
 read -p ">" store
+echo $store >> $file
 read -p ">" store
-echo $store
+echo $store >> $file
+
+
