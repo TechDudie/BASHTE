@@ -67,38 +67,3 @@ fi
 
 
 
-do
-    read -p "Enter choice: " choice
-    case $choice in
-        
-        q)
-            echo "Quitting..."
-            rm -rf tempfile.txt
-            exit
-           
-            ;;
-        w)
-            echo "Writing..."
-            cat tempfile.txt >> $file
-            echo "Writing done."
-            rm -rf tempfile.txt
-            exit
-            ;;
-        wq)
-            echo "Writing..."
-            cat tempfile.txt >> $file
-            echo "Writing done."
-            rm -rf tempfile.txt
-            exit
-            ;;
-        q!)
-            echo "Quitting..."
-            rm tempfile.txt
-            rm -rf tempfile.txt
-            exit
-            ;;
-        *)
-            echo "Invalid choice"
-            ;;
-    esac
-done
