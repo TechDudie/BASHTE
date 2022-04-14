@@ -42,7 +42,7 @@ read -p ">" store
 echo $store >> tempfile.txt
 
 # detects if user wants to quit or write
-while [ $store != ":q" ] && [ $store != ":w" ] && [ $store != ":wq" ] && [ $store != ":q!" ]
+while [ $store != ":q" ] && [ $store != ":w" ] && [ $store != ":wq" ] && [ $store != ":q!" ] do
 if [ $store == ":q" ]
 then
 echo "Quitting..."
@@ -65,5 +65,5 @@ else
 echo "Invalid input"
 fi
 
-
+done
 
