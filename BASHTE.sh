@@ -64,7 +64,7 @@ exit
 else
 echo "Invalid input"
 fi
-done
+
 
 
 do
