@@ -1,7 +1,7 @@
 #/bin/bash
 clear
 echo "###########################################################"
-echo "#  BASHTE TEXT EDITOR - i = insert  :q = quit  :w = write #"
+echo "#  BASHTE TEXT EDITOR -  :q = quit  :w = write            #"
 echo "#  :wq = Write and quit  :q! = quit and discard           #"
 echo "###########################################################"
 echo ""
@@ -70,11 +70,7 @@ fi
 do
     read -p "Enter choice: " choice
     case $choice in
-        i)
-            echo "Enter text: "
-            read text
-            echo $text >> tempfile.txt
-            ;;
+        
         q)
             echo "Quitting..."
             exit
