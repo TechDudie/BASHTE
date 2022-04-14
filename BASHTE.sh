@@ -13,13 +13,20 @@ echo "#  BASHTE TEXT EDITOR - i = insert  :q = quit  :w = write #"
 echo "#  :wq = Write and quit  :q! = quit and discard           #"
 echo "###########################################################"
 read -p ">" store
-awk 'NR==3{print $store}1' $file
+# stores store in file
+echo $store >> $file
 read -p ">" store
+echo $store >> $file
 read -p ">" store
+echo $store >> $file
 read -p ">" store
+echo $store >> $file
 read -p ">" store
+echo $store >> $file
 read -p ">" store
+echo $store >> $file
 read -p ">" store
+echo $store >> $file
 read -p ">" store
 read -p ">" store
 read -p ">" store
