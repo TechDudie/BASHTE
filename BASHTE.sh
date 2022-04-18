@@ -7,7 +7,6 @@ echo "#  :wq = Write and quit  :q! = quit and discard  :dd = Delete Previous lin
 echo "###############################################################################"
 echo ""
 read -p "Enter file name: " file
-touch .$file
 mkdir BASHTE
 clear
 echo "###############################################################################"
@@ -25,10 +24,10 @@ do
         break
     elif [ "$store" = "\\:w" ]
     then
-        ls BASHTE/* | sort -n | xargs cat >> $file
+        ls ~/BASHTE/* | sort -n | xargs cat >> $file
     elif [ "$store" = "\\:wq" ]
     then
-        ls BASHTE/* | sort -n | xargs cat >> $file
+        ls ~/BASHTE/* | sort -n | xargs cat >> $file
         rm -rf .$file
         break
     elif [ "$store" = "\\:q!" ]
@@ -40,10 +39,10 @@ do
     elif [ "$store" = "\\:dd" ]
     then
     LinesMinusOne=$(expr $lines - 1)
-    rm -rf BASHTE/$LinesMinusOne.txt
+    rm -rf ~/BASHTE/$LinesMinusOne.txt
     else
 
-        echo $store >> BASHTE/$lines.txt
+        echo $store >> ~/BASHTE/$lines.txt
         # counts the number of times the while loop is run
         ((lines++))
     fi
