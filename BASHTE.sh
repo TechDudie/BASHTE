@@ -7,6 +7,7 @@ echo "#  :wq = Write and quit  :q! = quit and discard  :dd = Delete Previous lin
 echo "###############################################################################"
 echo ""
 read -p "Enter file name: " file
+touch $file
 mkdir BASHTE
 clear
 echo "###############################################################################"
