@@ -2,20 +2,18 @@
 # Ripoff vim
 clear
 echo "###############################################################################"
-echo "#  BASHTE TEXT EDITOR -  \\\ = interupt  :q = quit  :w = write                 #"
-echo "#  :wq = Write and quit  :q! = quit and discard  :dd = Delete Previous line   #"
+echo "#  BASHTE TEXT EDITOR -  \\\ = interupt  :q = quit  :w = write            your#"
+echo "#  :wq = Write and quit  :q! = quit and discard  :dd = Delete Previous linemom#"
 echo "###############################################################################"
 echo ""
 read -p "Enter file name: " file
 touch $file
-mkdir ~/BASHTE
+mkdir ~/.bashte
 clear
 echo "###############################################################################"
-echo "#  BASHTE TEXT EDITOR -  \\\ = interupt  :q = quit  :w = write                 #"
-echo "#  :wq = Write and quit  :q! = quit and discard  :dd = Delete Previous line   #"
+echo "#  BASHTE TEXT EDITOR -  \\\ = interupt  :q = quit  :w = write             dot#"
+echo "#  :wq = Write and quit  :q! = quit and discard  :dd = Delete Previous linecom#"
 echo "###############################################################################"
-
-
 
 while true
 do  
@@ -25,10 +23,10 @@ do
         break
     elif [ "$store" = "\\:w" ]
     then
-        ls ~/BASHTE/* | sort -n | xargs cat >> $file
+        ls ~/.bashte/* | sort -n | xargs cat >> $file
     elif [ "$store" = "\\:wq" ]
     then
-        ls ~/BASHTE/* | sort -n | xargs cat >> $file
+        ls ~/.bashte/* | sort -n | xargs cat >> $file
         rm -rf .$file
         break
     elif [ "$store" = "\\:q!" ]
@@ -39,8 +37,8 @@ do
 
     elif [ "$store" = "\\:dd" ]
     then
-    LinesMinusOne=$(expr $lines - 1)
-    rm -rf ~/BASHTE/$LinesMinusOne.txt
+    LMaO=$(expr $lines - 1)
+    rm -rf ~/.bashte/$LMaO.txt
     else
 
         echo $store >> ~/BASHTE/$lines.txt
